@@ -1,0 +1,1414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8013F8CA2064D2C900813CD5 /* EspCharacteristicViewHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8013F8C92064D2C900813CD5 /* EspCharacteristicViewHolder.m */; };
+		806C0D74203EC2FB002D7D04 /* EspDeviceCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D73203EC2FB002D7D04 /* EspDeviceCharacteristic.m */; };
+		806C0D7720400360002D7D04 /* EspDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D7620400360002D7D04 /* EspDeviceUtil.m */; };
+		806C0D7A2041671C002D7D04 /* EspTextUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D792041671C002D7D04 /* EspTextUtil.m */; };
+		806C0D7E20450111002D7D04 /* EspHttpParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D7D20450111002D7D04 /* EspHttpParams.m */; };
+		806C0D8120450C51002D7D04 /* EspHttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D8020450C51002D7D04 /* EspHttpResponse.m */; };
+		806C0D842046472D002D7D04 /* EspAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D832046472D002D7D04 /* EspAction.m */; };
+		806C0D8720464772002D7D04 /* EspActionDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D8620464772002D7D04 /* EspActionDevice.m */; };
+		806C0D8A204696A7002D7D04 /* EspActionDeviceTopology.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D89204696A7002D7D04 /* EspActionDeviceTopology.m */; };
+		806C0D8F2046A2A4002D7D04 /* EspHttpUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D8E2046A2A4002D7D04 /* EspHttpUtils.m */; };
+		806C0D932046AB2A002D7D04 /* EspCommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D922046AB2A002D7D04 /* EspCommonUtils.m */; };
+		806C0D962047F378002D7D04 /* EspActionDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D952047F378002D7D04 /* EspActionDeviceInfo.m */; };
+		806C0D99204F8C92002D7D04 /* EspRandomUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D98204F8C92002D7D04 /* EspRandomUtils.m */; };
+		806C0D9C2058C2F2002D7D04 /* EspJsonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0D9B2058C2F2002D7D04 /* EspJsonUtils.m */; };
+		806C0DA2205A6E3C002D7D04 /* EspDeviceCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0DA1205A6E3C002D7D04 /* EspDeviceCommonViewController.m */; };
+		806C0E7920635A2D002D7D04 /* EspActionUserRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0E7420635A2D002D7D04 /* EspActionUserRegister.m */; };
+		806C0E7A20635A2D002D7D04 /* EspActionUserLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0E7720635A2D002D7D04 /* EspActionUserLogin.m */; };
+		806C0E7B20635A2D002D7D04 /* EspActionUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 806C0E7820635A2D002D7D04 /* EspActionUser.m */; };
+		80759923209C42D0001E2928 /* EspWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80759922209C42D0001E2928 /* EspWebViewController.m */; };
+		8075994A20A06089001E2928 /* web in Resources */ = {isa = PBXBuildFile; fileRef = 8075994920A06089001E2928 /* web */; };
+		8075994E20A14E4D001E2928 /* EspApiForJS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075994D20A14E4D001E2928 /* EspApiForJS.m */; };
+		8075995A20A976BE001E2928 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8075995820A976BE001E2928 /* Model.xcdatamodeld */; };
+		8075999C20AA8107001E2928 /* EspDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075999B20AA8107001E2928 /* EspDBManager.m */; };
+		8075999F20AA885C001E2928 /* EspApDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8075999E20AA885C001E2928 /* EspApDBManager.m */; };
+		807599A220AA8871001E2928 /* EspDeviceDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599A120AA8871001E2928 /* EspDeviceDBManager.m */; };
+		807599AB20AAD5EF001E2928 /* EspUserDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599AA20AAD5EF001E2928 /* EspUserDBManager.m */; };
+		807599DC20AADEFC001E2928 /* ApDB+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599CF20AADEFC001E2928 /* ApDB+CoreDataProperties.m */; };
+		807599DD20AADEFC001E2928 /* UserDB+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599D120AADEFC001E2928 /* UserDB+CoreDataProperties.m */; };
+		807599DF20AADEFC001E2928 /* UserDB+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599D420AADEFC001E2928 /* UserDB+CoreDataClass.m */; };
+		807599E020AADEFC001E2928 /* ApDB+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599D520AADEFC001E2928 /* ApDB+CoreDataClass.m */; };
+		807599E120AADEFC001E2928 /* DeviceDB+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599D620AADEFC001E2928 /* DeviceDB+CoreDataClass.m */; };
+		807599E320AADEFC001E2928 /* DeviceDB+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599DB20AADEFC001E2928 /* DeviceDB+CoreDataProperties.m */; };
+		807599E820AAE253001E2928 /* LastLoginUserDB+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599E620AAE253001E2928 /* LastLoginUserDB+CoreDataClass.m */; };
+		807599E920AAE253001E2928 /* LastLoginUserDB+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 807599E720AAE253001E2928 /* LastLoginUserDB+CoreDataProperties.m */; };
+		807F59722085EED000BB9A51 /* EspBleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 807F59712085EED000BB9A51 /* EspBleListViewController.m */; };
+		80D2F0BB1FFC80A600943675 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F0BA1FFC80A600943675 /* AppDelegate.m */; };
+		80D2F0BE1FFC80A700943675 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F0BD1FFC80A700943675 /* MainViewController.m */; };
+		80D2F0C11FFC80A700943675 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D2F0BF1FFC80A700943675 /* Main.storyboard */; };
+		80D2F0C31FFC80A700943675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D2F0C21FFC80A700943675 /* Assets.xcassets */; };
+		80D2F0C61FFC80A700943675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80D2F0C41FFC80A700943675 /* LaunchScreen.storyboard */; };
+		80D2F0C91FFC80A700943675 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F0C81FFC80A700943675 /* main.m */; };
+		80D2F0D31FFC80A700943675 /* Esp32MeshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F0D21FFC80A700943675 /* Esp32MeshTests.m */; };
+		80D2F0DE1FFC80A700943675 /* Esp32MeshUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F0DD1FFC80A700943675 /* Esp32MeshUITests.m */; };
+		80D2F0F31FFC83C900943675 /* EspUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F0F21FFC83C900943675 /* EspUser.m */; };
+		80D2F0F71FFC83EB00943675 /* EspDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F0F61FFC83EB00943675 /* EspDevice.m */; };
+		80D2F0FB1FFE073C00943675 /* EspConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F0FA1FFE073C00943675 /* EspConstants.m */; };
+		80D2F1041FFE191E00943675 /* EspActionDeviceStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D2F1031FFE191E00943675 /* EspActionDeviceStation.m */; };
+		80D55FA620876CB400E7F3DE /* EspBlockingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D55FA520876CB400E7F3DE /* EspBlockingQueue.m */; };
+		80D55FAA208831E800E7F3DE /* EspNetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D55FA9208831E800E7F3DE /* EspNetUtils.m */; };
+		80D55FAD2088479700E7F3DE /* EspBlufiConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D55FAC2088479700E7F3DE /* EspBlufiConfigureViewController.m */; };
+		80D560002088989400E7F3DE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D55FB02088989400E7F3DE /* libcrypto.a */; };
+		80D560012088989400E7F3DE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 80D55FB22088989400E7F3DE /* LICENSE */; };
+		80D560022088989400E7F3DE /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D55FFF2088989400E7F3DE /* libssl.a */; };
+		80D5600820889E1900E7F3DE /* PacketCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D5600520889E1800E7F3DE /* PacketCommand.m */; };
+		80D5600920889E1900E7F3DE /* DH_AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D5600720889E1900E7F3DE /* DH_AES.m */; };
+		80D5601520889EC700E7F3DE /* WifiInforObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D5600C20889EC500E7F3DE /* WifiInforObject.m */; };
+		80D5601620889EC700E7F3DE /* RSAObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D5600D20889EC500E7F3DE /* RSAObject.m */; };
+		80D5601720889EC700E7F3DE /* LocalNotifyFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D5600F20889EC600E7F3DE /* LocalNotifyFunc.m */; };
+		80D5601820889EC700E7F3DE /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D5601020889EC600E7F3DE /* BLEDevice.m */; };
+		80D5601920889EC700E7F3DE /* BLEdataFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 80D5601320889EC700E7F3DE /* BLEdataFunc.m */; };
+		80DDBC6A20871D4D001D10D3 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DDBC6920871D4D001D10D3 /* UIView+Toast.m */; };
+		80DDBC7420874EEB001D10D3 /* EspBlufiSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DDBC7320874EEB001D10D3 /* EspBlufiSettingsViewController.m */; };
+		80FE8545208ECFCB00BC10F4 /* EspActionDeviceOTA.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE8544208ECFCB00BC10F4 /* EspActionDeviceOTA.m */; };
+		80FE8548208ED4F700BC10F4 /* EspRomQueryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE8547208ED4F700BC10F4 /* EspRomQueryResult.m */; };
+		80FE854B208ED94C00BC10F4 /* EspDownloadResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE854A208ED94C00BC10F4 /* EspDownloadResult.m */; };
+		80FE854E208F211C00BC10F4 /* EspOTAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE854D208F211C00BC10F4 /* EspOTAViewController.m */; };
+		80FE85552090264700BC10F4 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 80FE85502090264700BC10F4 /* Documentation.html */; };
+		80FE85562090264700BC10F4 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE85512090264700BC10F4 /* GCDAsyncUdpSocket.m */; };
+		80FE85572090264700BC10F4 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE85522090264700BC10F4 /* GCDAsyncSocket.m */; };
+		80FE856F2092D34600BC10F4 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE855C2092D34600BC10F4 /* DDTTYLogger.m */; };
+		80FE85702092D34600BC10F4 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE855F2092D34600BC10F4 /* DDASLLogger.m */; };
+		80FE85712092D34600BC10F4 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE85622092D34600BC10F4 /* DDContextFilterLogFormatter.m */; };
+		80FE85722092D34600BC10F4 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE85632092D34600BC10F4 /* DDDispatchQueueLogFormatter.m */; };
+		80FE85732092D34600BC10F4 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE85662092D34600BC10F4 /* DDMultiFormatter.m */; };
+		80FE85742092D34600BC10F4 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 80FE85682092D34600BC10F4 /* README.txt */; };
+		80FE85752092D34600BC10F4 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE85692092D34600BC10F4 /* DDLog.m */; };
+		80FE85762092D34600BC10F4 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE856C2092D34600BC10F4 /* DDAbstractDatabaseLogger.m */; };
+		80FE85772092D34600BC10F4 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE856D2092D34600BC10F4 /* DDFileLogger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80D2F0CF1FFC80A700943675 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D2F0AE1FFC80A600943675 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80D2F0B51FFC80A600943675;
+			remoteInfo = Esp32Mesh;
+		};
+		80D2F0DA1FFC80A700943675 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80D2F0AE1FFC80A600943675 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80D2F0B51FFC80A600943675;
+			remoteInfo = Esp32Mesh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8013F8C82064D2C900813CD5 /* EspCharacteristicViewHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspCharacteristicViewHolder.h; sourceTree = "<group>"; };
+		8013F8C92064D2C900813CD5 /* EspCharacteristicViewHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspCharacteristicViewHolder.m; sourceTree = "<group>"; };
+		806C0D72203EC2FB002D7D04 /* EspDeviceCharacteristic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspDeviceCharacteristic.h; sourceTree = "<group>"; };
+		806C0D73203EC2FB002D7D04 /* EspDeviceCharacteristic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspDeviceCharacteristic.m; sourceTree = "<group>"; };
+		806C0D7520400360002D7D04 /* EspDeviceUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspDeviceUtil.h; sourceTree = "<group>"; };
+		806C0D7620400360002D7D04 /* EspDeviceUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspDeviceUtil.m; sourceTree = "<group>"; };
+		806C0D782041671C002D7D04 /* EspTextUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspTextUtil.h; sourceTree = "<group>"; };
+		806C0D792041671C002D7D04 /* EspTextUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspTextUtil.m; sourceTree = "<group>"; };
+		806C0D7C20450111002D7D04 /* EspHttpParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspHttpParams.h; sourceTree = "<group>"; };
+		806C0D7D20450111002D7D04 /* EspHttpParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspHttpParams.m; sourceTree = "<group>"; };
+		806C0D7F20450C51002D7D04 /* EspHttpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspHttpResponse.h; sourceTree = "<group>"; };
+		806C0D8020450C51002D7D04 /* EspHttpResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspHttpResponse.m; sourceTree = "<group>"; };
+		806C0D822046472D002D7D04 /* EspAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EspAction.h; path = Esp32Mesh/action/EspAction.h; sourceTree = SOURCE_ROOT; };
+		806C0D832046472D002D7D04 /* EspAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EspAction.m; path = Esp32Mesh/action/EspAction.m; sourceTree = SOURCE_ROOT; };
+		806C0D8520464772002D7D04 /* EspActionDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspActionDevice.h; sourceTree = "<group>"; };
+		806C0D8620464772002D7D04 /* EspActionDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspActionDevice.m; sourceTree = "<group>"; };
+		806C0D88204696A7002D7D04 /* EspActionDeviceTopology.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspActionDeviceTopology.h; sourceTree = "<group>"; };
+		806C0D89204696A7002D7D04 /* EspActionDeviceTopology.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspActionDeviceTopology.m; sourceTree = "<group>"; };
+		806C0D8D2046A2A4002D7D04 /* EspHttpUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspHttpUtils.h; sourceTree = "<group>"; };
+		806C0D8E2046A2A4002D7D04 /* EspHttpUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspHttpUtils.m; sourceTree = "<group>"; };
+		806C0D912046AB2A002D7D04 /* EspCommonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspCommonUtils.h; sourceTree = "<group>"; };
+		806C0D922046AB2A002D7D04 /* EspCommonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspCommonUtils.m; sourceTree = "<group>"; };
+		806C0D942047F378002D7D04 /* EspActionDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspActionDeviceInfo.h; sourceTree = "<group>"; };
+		806C0D952047F378002D7D04 /* EspActionDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspActionDeviceInfo.m; sourceTree = "<group>"; };
+		806C0D97204F8C92002D7D04 /* EspRandomUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspRandomUtils.h; sourceTree = "<group>"; };
+		806C0D98204F8C92002D7D04 /* EspRandomUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspRandomUtils.m; sourceTree = "<group>"; };
+		806C0D9A2058C2F2002D7D04 /* EspJsonUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspJsonUtils.h; sourceTree = "<group>"; };
+		806C0D9B2058C2F2002D7D04 /* EspJsonUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspJsonUtils.m; sourceTree = "<group>"; };
+		806C0DA0205A6E3C002D7D04 /* EspDeviceCommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspDeviceCommonViewController.h; sourceTree = "<group>"; };
+		806C0DA1205A6E3C002D7D04 /* EspDeviceCommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspDeviceCommonViewController.m; sourceTree = "<group>"; };
+		806C0E7320635A2D002D7D04 /* EspActionUserLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspActionUserLogin.h; sourceTree = "<group>"; };
+		806C0E7420635A2D002D7D04 /* EspActionUserRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspActionUserRegister.m; sourceTree = "<group>"; };
+		806C0E7520635A2D002D7D04 /* EspActionUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspActionUser.h; sourceTree = "<group>"; };
+		806C0E7620635A2D002D7D04 /* EspActionUserRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspActionUserRegister.h; sourceTree = "<group>"; };
+		806C0E7720635A2D002D7D04 /* EspActionUserLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspActionUserLogin.m; sourceTree = "<group>"; };
+		806C0E7820635A2D002D7D04 /* EspActionUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspActionUser.m; sourceTree = "<group>"; };
+		80759921209C42D0001E2928 /* EspWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspWebViewController.h; sourceTree = "<group>"; };
+		80759922209C42D0001E2928 /* EspWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspWebViewController.m; sourceTree = "<group>"; };
+		8075994920A06089001E2928 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
+		8075994C20A14E4D001E2928 /* EspApiForJS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspApiForJS.h; sourceTree = "<group>"; };
+		8075994D20A14E4D001E2928 /* EspApiForJS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspApiForJS.m; sourceTree = "<group>"; };
+		8075995920A976BE001E2928 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8075999A20AA8107001E2928 /* EspDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspDBManager.h; sourceTree = "<group>"; };
+		8075999B20AA8107001E2928 /* EspDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspDBManager.m; sourceTree = "<group>"; };
+		8075999D20AA885C001E2928 /* EspApDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspApDBManager.h; sourceTree = "<group>"; };
+		8075999E20AA885C001E2928 /* EspApDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspApDBManager.m; sourceTree = "<group>"; };
+		807599A020AA8871001E2928 /* EspDeviceDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspDeviceDBManager.h; sourceTree = "<group>"; };
+		807599A120AA8871001E2928 /* EspDeviceDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspDeviceDBManager.m; sourceTree = "<group>"; };
+		807599A920AAD5EF001E2928 /* EspUserDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspUserDBManager.h; sourceTree = "<group>"; };
+		807599AA20AAD5EF001E2928 /* EspUserDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspUserDBManager.m; sourceTree = "<group>"; };
+		807599CC20AADEFC001E2928 /* DeviceDB+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DeviceDB+CoreDataClass.h"; sourceTree = "<group>"; };
+		807599CD20AADEFC001E2928 /* ApDB+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ApDB+CoreDataClass.h"; sourceTree = "<group>"; };
+		807599CE20AADEFC001E2928 /* UserDB+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserDB+CoreDataClass.h"; sourceTree = "<group>"; };
+		807599CF20AADEFC001E2928 /* ApDB+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ApDB+CoreDataProperties.m"; sourceTree = "<group>"; };
+		807599D120AADEFC001E2928 /* UserDB+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserDB+CoreDataProperties.m"; sourceTree = "<group>"; };
+		807599D320AADEFC001E2928 /* DeviceDB+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DeviceDB+CoreDataProperties.h"; sourceTree = "<group>"; };
+		807599D420AADEFC001E2928 /* UserDB+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UserDB+CoreDataClass.m"; sourceTree = "<group>"; };
+		807599D520AADEFC001E2928 /* ApDB+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ApDB+CoreDataClass.m"; sourceTree = "<group>"; };
+		807599D620AADEFC001E2928 /* DeviceDB+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DeviceDB+CoreDataClass.m"; sourceTree = "<group>"; };
+		807599D720AADEFC001E2928 /* UserDB+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UserDB+CoreDataProperties.h"; sourceTree = "<group>"; };
+		807599D920AADEFC001E2928 /* ApDB+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ApDB+CoreDataProperties.h"; sourceTree = "<group>"; };
+		807599DB20AADEFC001E2928 /* DeviceDB+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DeviceDB+CoreDataProperties.m"; sourceTree = "<group>"; };
+		807599E420AAE253001E2928 /* LastLoginUserDB+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LastLoginUserDB+CoreDataProperties.h"; sourceTree = "<group>"; };
+		807599E520AAE253001E2928 /* LastLoginUserDB+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LastLoginUserDB+CoreDataClass.h"; sourceTree = "<group>"; };
+		807599E620AAE253001E2928 /* LastLoginUserDB+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LastLoginUserDB+CoreDataClass.m"; sourceTree = "<group>"; };
+		807599E720AAE253001E2928 /* LastLoginUserDB+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "LastLoginUserDB+CoreDataProperties.m"; sourceTree = "<group>"; };
+		807F59702085EED000BB9A51 /* EspBleListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspBleListViewController.h; sourceTree = "<group>"; };
+		807F59712085EED000BB9A51 /* EspBleListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspBleListViewController.m; sourceTree = "<group>"; };
+		80D2F0B61FFC80A600943675 /* Esp32Mesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esp32Mesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D2F0B91FFC80A600943675 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		80D2F0BA1FFC80A600943675 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		80D2F0BC1FFC80A600943675 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		80D2F0BD1FFC80A700943675 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		80D2F0C01FFC80A700943675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80D2F0C21FFC80A700943675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80D2F0C51FFC80A700943675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80D2F0C71FFC80A700943675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D2F0C81FFC80A700943675 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		80D2F0CE1FFC80A700943675 /* Esp32MeshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Esp32MeshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D2F0D21FFC80A700943675 /* Esp32MeshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Esp32MeshTests.m; sourceTree = "<group>"; };
+		80D2F0D41FFC80A700943675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D2F0D91FFC80A700943675 /* Esp32MeshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Esp32MeshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D2F0DD1FFC80A700943675 /* Esp32MeshUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Esp32MeshUITests.m; sourceTree = "<group>"; };
+		80D2F0DF1FFC80A700943675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D2F0F11FFC83C900943675 /* EspUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspUser.h; sourceTree = "<group>"; };
+		80D2F0F21FFC83C900943675 /* EspUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspUser.m; sourceTree = "<group>"; };
+		80D2F0F51FFC83EB00943675 /* EspDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspDevice.h; sourceTree = "<group>"; };
+		80D2F0F61FFC83EB00943675 /* EspDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspDevice.m; sourceTree = "<group>"; };
+		80D2F0F91FFE073C00943675 /* EspConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspConstants.h; sourceTree = "<group>"; };
+		80D2F0FA1FFE073C00943675 /* EspConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspConstants.m; sourceTree = "<group>"; };
+		80D2F1021FFE191E00943675 /* EspActionDeviceStation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspActionDeviceStation.h; sourceTree = "<group>"; };
+		80D2F1031FFE191E00943675 /* EspActionDeviceStation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspActionDeviceStation.m; sourceTree = "<group>"; };
+		80D55FA420876CB400E7F3DE /* EspBlockingQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspBlockingQueue.h; sourceTree = "<group>"; };
+		80D55FA520876CB400E7F3DE /* EspBlockingQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspBlockingQueue.m; sourceTree = "<group>"; };
+		80D55FA8208831E800E7F3DE /* EspNetUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspNetUtils.h; sourceTree = "<group>"; };
+		80D55FA9208831E800E7F3DE /* EspNetUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspNetUtils.m; sourceTree = "<group>"; };
+		80D55FAB2088479700E7F3DE /* EspBlufiConfigureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspBlufiConfigureViewController.h; sourceTree = "<group>"; };
+		80D55FAC2088479700E7F3DE /* EspBlufiConfigureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspBlufiConfigureViewController.m; sourceTree = "<group>"; };
+		80D55FB02088989400E7F3DE /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		80D55FB22088989400E7F3DE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		80D55FB42088989400E7F3DE /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		80D55FB52088989400E7F3DE /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		80D55FB62088989400E7F3DE /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		80D55FB72088989400E7F3DE /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		80D55FB82088989400E7F3DE /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		80D55FB92088989400E7F3DE /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		80D55FBA2088989400E7F3DE /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		80D55FBB2088989400E7F3DE /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		80D55FBC2088989400E7F3DE /* cms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cms.h; sourceTree = "<group>"; };
+		80D55FBD2088989400E7F3DE /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		80D55FBE2088989400E7F3DE /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		80D55FBF2088989400E7F3DE /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		80D55FC02088989400E7F3DE /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		80D55FC12088989400E7F3DE /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		80D55FC22088989400E7F3DE /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		80D55FC32088989400E7F3DE /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		80D55FC42088989400E7F3DE /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		80D55FC52088989400E7F3DE /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		80D55FC62088989400E7F3DE /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		80D55FC72088989400E7F3DE /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		80D55FC82088989400E7F3DE /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		80D55FC92088989400E7F3DE /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		80D55FCA2088989400E7F3DE /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		80D55FCB2088989400E7F3DE /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		80D55FCC2088989400E7F3DE /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		80D55FCD2088989400E7F3DE /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		80D55FCE2088989400E7F3DE /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		80D55FCF2088989400E7F3DE /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		80D55FD02088989400E7F3DE /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		80D55FD12088989400E7F3DE /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		80D55FD22088989400E7F3DE /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		80D55FD32088989400E7F3DE /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		80D55FD42088989400E7F3DE /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		80D55FD52088989400E7F3DE /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		80D55FD62088989400E7F3DE /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		80D55FD72088989400E7F3DE /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		80D55FD82088989400E7F3DE /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		80D55FD92088989400E7F3DE /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		80D55FDA2088989400E7F3DE /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		80D55FDB2088989400E7F3DE /* srp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srp.h; sourceTree = "<group>"; };
+		80D55FDC2088989400E7F3DE /* camellia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		80D55FDD2088989400E7F3DE /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		80D55FDE2088989400E7F3DE /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		80D55FDF2088989400E7F3DE /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		80D55FE02088989400E7F3DE /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		80D55FE12088989400E7F3DE /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		80D55FE22088989400E7F3DE /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		80D55FE32088989400E7F3DE /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		80D55FE42088989400E7F3DE /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		80D55FE52088989400E7F3DE /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		80D55FE62088989400E7F3DE /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		80D55FE72088989400E7F3DE /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		80D55FE82088989400E7F3DE /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		80D55FE92088989400E7F3DE /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		80D55FEA2088989400E7F3DE /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		80D55FEB2088989400E7F3DE /* ts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts.h; sourceTree = "<group>"; };
+		80D55FEC2088989400E7F3DE /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		80D55FED2088989400E7F3DE /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		80D55FEE2088989400E7F3DE /* seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = seed.h; sourceTree = "<group>"; };
+		80D55FEF2088989400E7F3DE /* modes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modes.h; sourceTree = "<group>"; };
+		80D55FF02088989400E7F3DE /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		80D55FF12088989400E7F3DE /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		80D55FF22088989400E7F3DE /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		80D55FF32088989400E7F3DE /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		80D55FF42088989400E7F3DE /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		80D55FF52088989400E7F3DE /* whrlpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whrlpool.h; sourceTree = "<group>"; };
+		80D55FF62088989400E7F3DE /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		80D55FF72088989400E7F3DE /* mdc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdc2.h; sourceTree = "<group>"; };
+		80D55FF82088989400E7F3DE /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		80D55FF92088989400E7F3DE /* srtp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srtp.h; sourceTree = "<group>"; };
+		80D55FFA2088989400E7F3DE /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		80D55FFB2088989400E7F3DE /* cmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		80D55FFC2088989400E7F3DE /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		80D55FFD2088989400E7F3DE /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		80D55FFE2088989400E7F3DE /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		80D55FFF2088989400E7F3DE /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		80D5600420889E1800E7F3DE /* PacketCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketCommand.h; sourceTree = "<group>"; };
+		80D5600520889E1800E7F3DE /* PacketCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketCommand.m; sourceTree = "<group>"; };
+		80D5600620889E1800E7F3DE /* DH_AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DH_AES.h; sourceTree = "<group>"; };
+		80D5600720889E1900E7F3DE /* DH_AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DH_AES.m; sourceTree = "<group>"; };
+		80D5600A20889EC500E7F3DE /* UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUID.h; sourceTree = "<group>"; };
+		80D5600B20889EC500E7F3DE /* LocalNotifyFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotifyFunc.h; sourceTree = "<group>"; };
+		80D5600C20889EC500E7F3DE /* WifiInforObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiInforObject.m; sourceTree = "<group>"; };
+		80D5600D20889EC500E7F3DE /* RSAObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAObject.m; sourceTree = "<group>"; };
+		80D5600E20889EC600E7F3DE /* BLEdataFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEdataFunc.h; sourceTree = "<group>"; };
+		80D5600F20889EC600E7F3DE /* LocalNotifyFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotifyFunc.m; sourceTree = "<group>"; };
+		80D5601020889EC600E7F3DE /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
+		80D5601120889EC600E7F3DE /* RSAObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAObject.h; sourceTree = "<group>"; };
+		80D5601220889EC600E7F3DE /* WifiInforObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiInforObject.h; sourceTree = "<group>"; };
+		80D5601320889EC700E7F3DE /* BLEdataFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEdataFunc.m; sourceTree = "<group>"; };
+		80D5601420889EC700E7F3DE /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
+		80DDBC6820871D4D001D10D3 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		80DDBC6920871D4D001D10D3 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		80DDBC7220874EEB001D10D3 /* EspBlufiSettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspBlufiSettingsViewController.h; sourceTree = "<group>"; };
+		80DDBC7320874EEB001D10D3 /* EspBlufiSettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspBlufiSettingsViewController.m; sourceTree = "<group>"; };
+		80FE8543208ECFCB00BC10F4 /* EspActionDeviceOTA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspActionDeviceOTA.h; sourceTree = "<group>"; };
+		80FE8544208ECFCB00BC10F4 /* EspActionDeviceOTA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspActionDeviceOTA.m; sourceTree = "<group>"; };
+		80FE8546208ED4F700BC10F4 /* EspRomQueryResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspRomQueryResult.h; sourceTree = "<group>"; };
+		80FE8547208ED4F700BC10F4 /* EspRomQueryResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspRomQueryResult.m; sourceTree = "<group>"; };
+		80FE8549208ED94C00BC10F4 /* EspDownloadResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspDownloadResult.h; sourceTree = "<group>"; };
+		80FE854A208ED94C00BC10F4 /* EspDownloadResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspDownloadResult.m; sourceTree = "<group>"; };
+		80FE854C208F211C00BC10F4 /* EspOTAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EspOTAViewController.h; sourceTree = "<group>"; };
+		80FE854D208F211C00BC10F4 /* EspOTAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EspOTAViewController.m; sourceTree = "<group>"; };
+		80FE85502090264700BC10F4 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		80FE85512090264700BC10F4 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		80FE85522090264700BC10F4 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		80FE85532090264700BC10F4 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		80FE85542090264700BC10F4 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		80FE8558209029D000BC10F4 /* CocoaAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaAsyncSocket.h; sourceTree = "<group>"; };
+		80FE855C2092D34600BC10F4 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		80FE855D2092D34600BC10F4 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		80FE855E2092D34600BC10F4 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		80FE855F2092D34600BC10F4 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		80FE85602092D34600BC10F4 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		80FE85622092D34600BC10F4 /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		80FE85632092D34600BC10F4 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		80FE85642092D34600BC10F4 /* DDMultiFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMultiFormatter.h; sourceTree = "<group>"; };
+		80FE85652092D34600BC10F4 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		80FE85662092D34600BC10F4 /* DDMultiFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMultiFormatter.m; sourceTree = "<group>"; };
+		80FE85672092D34600BC10F4 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		80FE85682092D34600BC10F4 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		80FE85692092D34600BC10F4 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		80FE856A2092D34600BC10F4 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		80FE856B2092D34600BC10F4 /* DDLog+LOGV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDLog+LOGV.h"; sourceTree = "<group>"; };
+		80FE856C2092D34600BC10F4 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		80FE856D2092D34600BC10F4 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		80FE856E2092D34600BC10F4 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80D2F0B31FFC80A600943675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D560022088989400E7F3DE /* libssl.a in Frameworks */,
+				80D560002088989400E7F3DE /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D2F0CB1FFC80A700943675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D2F0D61FFC80A700943675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		806C0D71203EC2D3002D7D04 /* properties */ = {
+			isa = PBXGroup;
+			children = (
+				806C0D72203EC2FB002D7D04 /* EspDeviceCharacteristic.h */,
+				806C0D73203EC2FB002D7D04 /* EspDeviceCharacteristic.m */,
+			);
+			path = properties;
+			sourceTree = "<group>";
+		};
+		806C0D8B2046A138002D7D04 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				80D55FA720882B8100E7F3DE /* collection */,
+				806C0D902046AAEF002D7D04 /* common */,
+				806C0D8C2046A146002D7D04 /* net */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		806C0D8C2046A146002D7D04 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				80FE85592092D31800BC10F4 /* CocoaAsyncSocket */,
+				806C0D7C20450111002D7D04 /* EspHttpParams.h */,
+				806C0D7D20450111002D7D04 /* EspHttpParams.m */,
+				806C0D7F20450C51002D7D04 /* EspHttpResponse.h */,
+				806C0D8020450C51002D7D04 /* EspHttpResponse.m */,
+				806C0D8D2046A2A4002D7D04 /* EspHttpUtils.h */,
+				806C0D8E2046A2A4002D7D04 /* EspHttpUtils.m */,
+				80D55FA8208831E800E7F3DE /* EspNetUtils.h */,
+				80D55FA9208831E800E7F3DE /* EspNetUtils.m */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		806C0D902046AAEF002D7D04 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				806C0D912046AB2A002D7D04 /* EspCommonUtils.h */,
+				806C0D922046AB2A002D7D04 /* EspCommonUtils.m */,
+				806C0D97204F8C92002D7D04 /* EspRandomUtils.h */,
+				806C0D98204F8C92002D7D04 /* EspRandomUtils.m */,
+				806C0D782041671C002D7D04 /* EspTextUtil.h */,
+				806C0D792041671C002D7D04 /* EspTextUtil.m */,
+				806C0D9A2058C2F2002D7D04 /* EspJsonUtils.h */,
+				806C0D9B2058C2F2002D7D04 /* EspJsonUtils.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		806C0D9D205A6986002D7D04 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				80DDBC6720871D4D001D10D3 /* helper */,
+				807F596F2085ED9800BB9A51 /* configure */,
+				806C0D9F205A6DD2002D7D04 /* device */,
+				806C0D9E205A69C7002D7D04 /* main */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		806C0D9E205A69C7002D7D04 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				80D2F0BC1FFC80A600943675 /* MainViewController.h */,
+				80D2F0BD1FFC80A700943675 /* MainViewController.m */,
+				80759921209C42D0001E2928 /* EspWebViewController.h */,
+				80759922209C42D0001E2928 /* EspWebViewController.m */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		806C0D9F205A6DD2002D7D04 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				806C0DA0205A6E3C002D7D04 /* EspDeviceCommonViewController.h */,
+				806C0DA1205A6E3C002D7D04 /* EspDeviceCommonViewController.m */,
+				8013F8C82064D2C900813CD5 /* EspCharacteristicViewHolder.h */,
+				8013F8C92064D2C900813CD5 /* EspCharacteristicViewHolder.m */,
+				80FE854C208F211C00BC10F4 /* EspOTAViewController.h */,
+				80FE854D208F211C00BC10F4 /* EspOTAViewController.m */,
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		806C0E7220635A2D002D7D04 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				806C0E7520635A2D002D7D04 /* EspActionUser.h */,
+				806C0E7820635A2D002D7D04 /* EspActionUser.m */,
+				806C0E7320635A2D002D7D04 /* EspActionUserLogin.h */,
+				806C0E7720635A2D002D7D04 /* EspActionUserLogin.m */,
+				806C0E7620635A2D002D7D04 /* EspActionUserRegister.h */,
+				806C0E7420635A2D002D7D04 /* EspActionUserRegister.m */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		8075994B20A14E3A001E2928 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				8075994C20A14E4D001E2928 /* EspApiForJS.h */,
+				8075994D20A14E4D001E2928 /* EspApiForJS.m */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
+		8075995720A9768C001E2928 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				807599CB20AADEFC001E2928 /* dao */,
+				8075997420AA73EC001E2928 /* manager */,
+				8075995820A976BE001E2928 /* Model.xcdatamodeld */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		8075997420AA73EC001E2928 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				8075999A20AA8107001E2928 /* EspDBManager.h */,
+				8075999B20AA8107001E2928 /* EspDBManager.m */,
+				8075999D20AA885C001E2928 /* EspApDBManager.h */,
+				8075999E20AA885C001E2928 /* EspApDBManager.m */,
+				807599A020AA8871001E2928 /* EspDeviceDBManager.h */,
+				807599A120AA8871001E2928 /* EspDeviceDBManager.m */,
+				807599A920AAD5EF001E2928 /* EspUserDBManager.h */,
+				807599AA20AAD5EF001E2928 /* EspUserDBManager.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		807599CB20AADEFC001E2928 /* dao */ = {
+			isa = PBXGroup;
+			children = (
+				807599CD20AADEFC001E2928 /* ApDB+CoreDataClass.h */,
+				807599D520AADEFC001E2928 /* ApDB+CoreDataClass.m */,
+				807599D920AADEFC001E2928 /* ApDB+CoreDataProperties.h */,
+				807599CF20AADEFC001E2928 /* ApDB+CoreDataProperties.m */,
+				807599CC20AADEFC001E2928 /* DeviceDB+CoreDataClass.h */,
+				807599D620AADEFC001E2928 /* DeviceDB+CoreDataClass.m */,
+				807599D320AADEFC001E2928 /* DeviceDB+CoreDataProperties.h */,
+				807599DB20AADEFC001E2928 /* DeviceDB+CoreDataProperties.m */,
+				807599E520AAE253001E2928 /* LastLoginUserDB+CoreDataClass.h */,
+				807599E620AAE253001E2928 /* LastLoginUserDB+CoreDataClass.m */,
+				807599E420AAE253001E2928 /* LastLoginUserDB+CoreDataProperties.h */,
+				807599E720AAE253001E2928 /* LastLoginUserDB+CoreDataProperties.m */,
+				807599CE20AADEFC001E2928 /* UserDB+CoreDataClass.h */,
+				807599D420AADEFC001E2928 /* UserDB+CoreDataClass.m */,
+				807599D720AADEFC001E2928 /* UserDB+CoreDataProperties.h */,
+				807599D120AADEFC001E2928 /* UserDB+CoreDataProperties.m */,
+			);
+			path = dao;
+			sourceTree = "<group>";
+		};
+		807F596F2085ED9800BB9A51 /* configure */ = {
+			isa = PBXGroup;
+			children = (
+				807F59702085EED000BB9A51 /* EspBleListViewController.h */,
+				807F59712085EED000BB9A51 /* EspBleListViewController.m */,
+				80DDBC7220874EEB001D10D3 /* EspBlufiSettingsViewController.h */,
+				80DDBC7320874EEB001D10D3 /* EspBlufiSettingsViewController.m */,
+				80D55FAB2088479700E7F3DE /* EspBlufiConfigureViewController.h */,
+				80D55FAC2088479700E7F3DE /* EspBlufiConfigureViewController.m */,
+			);
+			path = configure;
+			sourceTree = "<group>";
+		};
+		80D2F0AD1FFC80A600943675 = {
+			isa = PBXGroup;
+			children = (
+				80D2F0B81FFC80A600943675 /* Esp32Mesh */,
+				80D2F0D11FFC80A700943675 /* Esp32MeshTests */,
+				80D2F0DC1FFC80A700943675 /* Esp32MeshUITests */,
+				80D2F0B71FFC80A600943675 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80D2F0B71FFC80A600943675 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80D2F0B61FFC80A600943675 /* Esp32Mesh.app */,
+				80D2F0CE1FFC80A700943675 /* Esp32MeshTests.xctest */,
+				80D2F0D91FFC80A700943675 /* Esp32MeshUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80D2F0B81FFC80A600943675 /* Esp32Mesh */ = {
+			isa = PBXGroup;
+			children = (
+				8075994920A06089001E2928 /* web */,
+				80D5600320889A7900E7F3DE /* blufi */,
+				806C0D9D205A6986002D7D04 /* ui */,
+				8075995720A9768C001E2928 /* db */,
+				806C0D8B2046A138002D7D04 /* libs */,
+				80D2F0FD1FFE186900943675 /* action */,
+				80D2F0F81FFE071B00943675 /* constants */,
+				80D2F0EB1FFC820B00943675 /* model */,
+				80D2F0FC1FFE098000943675 /* utils */,
+				80D2F0B91FFC80A600943675 /* AppDelegate.h */,
+				80D2F0BA1FFC80A600943675 /* AppDelegate.m */,
+				80D2F0BF1FFC80A700943675 /* Main.storyboard */,
+				80D2F0C21FFC80A700943675 /* Assets.xcassets */,
+				80D2F0C41FFC80A700943675 /* LaunchScreen.storyboard */,
+				80D2F0C71FFC80A700943675 /* Info.plist */,
+				80D2F0C81FFC80A700943675 /* main.m */,
+			);
+			path = Esp32Mesh;
+			sourceTree = "<group>";
+		};
+		80D2F0D11FFC80A700943675 /* Esp32MeshTests */ = {
+			isa = PBXGroup;
+			children = (
+				80D2F0D21FFC80A700943675 /* Esp32MeshTests.m */,
+				80D2F0D41FFC80A700943675 /* Info.plist */,
+			);
+			path = Esp32MeshTests;
+			sourceTree = "<group>";
+		};
+		80D2F0DC1FFC80A700943675 /* Esp32MeshUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80D2F0DD1FFC80A700943675 /* Esp32MeshUITests.m */,
+				80D2F0DF1FFC80A700943675 /* Info.plist */,
+			);
+			path = Esp32MeshUITests;
+			sourceTree = "<group>";
+		};
+		80D2F0EB1FFC820B00943675 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				8075994B20A14E3A001E2928 /* web */,
+				80DDBC6B208735CA001D10D3 /* other */,
+				80D2F0F01FFC82CF00943675 /* device */,
+				80D2F0EC1FFC822700943675 /* user */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		80D2F0EC1FFC822700943675 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				80D2F0F11FFC83C900943675 /* EspUser.h */,
+				80D2F0F21FFC83C900943675 /* EspUser.m */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		80D2F0F01FFC82CF00943675 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				806C0D71203EC2D3002D7D04 /* properties */,
+				80D2F0F51FFC83EB00943675 /* EspDevice.h */,
+				80D2F0F61FFC83EB00943675 /* EspDevice.m */,
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		80D2F0F81FFE071B00943675 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+				80D2F0F91FFE073C00943675 /* EspConstants.h */,
+				80D2F0FA1FFE073C00943675 /* EspConstants.m */,
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		80D2F0FC1FFE098000943675 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				806C0D7520400360002D7D04 /* EspDeviceUtil.h */,
+				806C0D7620400360002D7D04 /* EspDeviceUtil.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		80D2F0FD1FFE186900943675 /* action */ = {
+			isa = PBXGroup;
+			children = (
+				806C0D822046472D002D7D04 /* EspAction.h */,
+				806C0D832046472D002D7D04 /* EspAction.m */,
+				80D2F1011FFE18DD00943675 /* device */,
+				806C0E7220635A2D002D7D04 /* user */,
+			);
+			path = action;
+			sourceTree = "<group>";
+		};
+		80D2F1011FFE18DD00943675 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				806C0D8520464772002D7D04 /* EspActionDevice.h */,
+				806C0D8620464772002D7D04 /* EspActionDevice.m */,
+				80D2F1021FFE191E00943675 /* EspActionDeviceStation.h */,
+				80D2F1031FFE191E00943675 /* EspActionDeviceStation.m */,
+				806C0D88204696A7002D7D04 /* EspActionDeviceTopology.h */,
+				806C0D89204696A7002D7D04 /* EspActionDeviceTopology.m */,
+				806C0D942047F378002D7D04 /* EspActionDeviceInfo.h */,
+				806C0D952047F378002D7D04 /* EspActionDeviceInfo.m */,
+				80FE8543208ECFCB00BC10F4 /* EspActionDeviceOTA.h */,
+				80FE8544208ECFCB00BC10F4 /* EspActionDeviceOTA.m */,
+			);
+			path = device;
+			sourceTree = "<group>";
+		};
+		80D55FA720882B8100E7F3DE /* collection */ = {
+			isa = PBXGroup;
+			children = (
+				80D55FA420876CB400E7F3DE /* EspBlockingQueue.h */,
+				80D55FA520876CB400E7F3DE /* EspBlockingQueue.m */,
+			);
+			path = collection;
+			sourceTree = "<group>";
+		};
+		80D55FAF2088989400E7F3DE /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				80D55FB02088989400E7F3DE /* libcrypto.a */,
+				80D55FB12088989400E7F3DE /* include */,
+				80D55FFF2088989400E7F3DE /* libssl.a */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		80D55FB12088989400E7F3DE /* include */ = {
+			isa = PBXGroup;
+			children = (
+				80D55FB22088989400E7F3DE /* LICENSE */,
+				80D55FB32088989400E7F3DE /* openssl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		80D55FB32088989400E7F3DE /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				80D55FE12088989400E7F3DE /* aes.h */,
+				80D55FC02088989400E7F3DE /* asn1_mac.h */,
+				80D55FC52088989400E7F3DE /* asn1.h */,
+				80D55FFA2088989400E7F3DE /* asn1t.h */,
+				80D55FC72088989400E7F3DE /* bio.h */,
+				80D55FBB2088989400E7F3DE /* blowfish.h */,
+				80D55FBA2088989400E7F3DE /* bn.h */,
+				80D55FD92088989400E7F3DE /* buffer.h */,
+				80D55FDC2088989400E7F3DE /* camellia.h */,
+				80D55FE32088989400E7F3DE /* cast.h */,
+				80D55FFB2088989400E7F3DE /* cmac.h */,
+				80D55FBC2088989400E7F3DE /* cms.h */,
+				80D55FE22088989400E7F3DE /* comp.h */,
+				80D55FBE2088989400E7F3DE /* conf_api.h */,
+				80D55FCD2088989400E7F3DE /* conf.h */,
+				80D55FD52088989400E7F3DE /* crypto.h */,
+				80D55FF32088989400E7F3DE /* des_old.h */,
+				80D55FE62088989400E7F3DE /* des.h */,
+				80D55FC92088989400E7F3DE /* dh.h */,
+				80D55FF82088989400E7F3DE /* dsa.h */,
+				80D55FED2088989400E7F3DE /* dso.h */,
+				80D55FB82088989400E7F3DE /* dtls1.h */,
+				80D55FDE2088989400E7F3DE /* e_os2.h */,
+				80D55FFC2088989400E7F3DE /* ebcdic.h */,
+				80D55FE82088989400E7F3DE /* ec.h */,
+				80D55FE92088989400E7F3DE /* ecdh.h */,
+				80D55FD22088989400E7F3DE /* ecdsa.h */,
+				80D55FBD2088989400E7F3DE /* engine.h */,
+				80D55FB92088989400E7F3DE /* err.h */,
+				80D55FDD2088989400E7F3DE /* evp.h */,
+				80D55FE02088989400E7F3DE /* hmac.h */,
+				80D55FFD2088989400E7F3DE /* idea.h */,
+				80D55FF22088989400E7F3DE /* krb5_asn.h */,
+				80D55FC22088989400E7F3DE /* kssl.h */,
+				80D55FFE2088989400E7F3DE /* lhash.h */,
+				80D55FDF2088989400E7F3DE /* md4.h */,
+				80D55FCE2088989400E7F3DE /* md5.h */,
+				80D55FF72088989400E7F3DE /* mdc2.h */,
+				80D55FEF2088989400E7F3DE /* modes.h */,
+				80D55FD82088989400E7F3DE /* obj_mac.h */,
+				80D55FD32088989400E7F3DE /* objects.h */,
+				80D55FE72088989400E7F3DE /* ocsp.h */,
+				80D55FC62088989400E7F3DE /* opensslconf.h */,
+				80D55FD62088989400E7F3DE /* opensslv.h */,
+				80D55FB72088989400E7F3DE /* ossl_typ.h */,
+				80D55FB52088989400E7F3DE /* pem.h */,
+				80D55FB42088989400E7F3DE /* pem2.h */,
+				80D55FD72088989400E7F3DE /* pkcs7.h */,
+				80D55FD42088989400E7F3DE /* pkcs12.h */,
+				80D55FEC2088989400E7F3DE /* pqueue.h */,
+				80D55FEA2088989400E7F3DE /* rand.h */,
+				80D55FC82088989400E7F3DE /* rc2.h */,
+				80D55FE42088989400E7F3DE /* rc4.h */,
+				80D55FF42088989400E7F3DE /* ripemd.h */,
+				80D55FF12088989400E7F3DE /* rsa.h */,
+				80D55FD12088989400E7F3DE /* safestack.h */,
+				80D55FEE2088989400E7F3DE /* seed.h */,
+				80D55FC32088989400E7F3DE /* sha.h */,
+				80D55FDB2088989400E7F3DE /* srp.h */,
+				80D55FF92088989400E7F3DE /* srtp.h */,
+				80D55FDA2088989400E7F3DE /* ssl.h */,
+				80D55FF02088989400E7F3DE /* ssl2.h */,
+				80D55FB62088989400E7F3DE /* ssl3.h */,
+				80D55FCC2088989400E7F3DE /* ssl23.h */,
+				80D55FE52088989400E7F3DE /* stack.h */,
+				80D55FC42088989400E7F3DE /* symhacks.h */,
+				80D55FF62088989400E7F3DE /* tls1.h */,
+				80D55FEB2088989400E7F3DE /* ts.h */,
+				80D55FD02088989400E7F3DE /* txt_db.h */,
+				80D55FCA2088989400E7F3DE /* ui_compat.h */,
+				80D55FC12088989400E7F3DE /* ui.h */,
+				80D55FF52088989400E7F3DE /* whrlpool.h */,
+				80D55FCF2088989400E7F3DE /* x509_vfy.h */,
+				80D55FBF2088989400E7F3DE /* x509.h */,
+				80D55FCB2088989400E7F3DE /* x509v3.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		80D5600320889A7900E7F3DE /* blufi */ = {
+			isa = PBXGroup;
+			children = (
+				80D55FAF2088989400E7F3DE /* openssl */,
+				80D5600E20889EC600E7F3DE /* BLEdataFunc.h */,
+				80D5601320889EC700E7F3DE /* BLEdataFunc.m */,
+				80D5601420889EC700E7F3DE /* BLEDevice.h */,
+				80D5601020889EC600E7F3DE /* BLEDevice.m */,
+				80D5600620889E1800E7F3DE /* DH_AES.h */,
+				80D5600720889E1900E7F3DE /* DH_AES.m */,
+				80D5600B20889EC500E7F3DE /* LocalNotifyFunc.h */,
+				80D5600F20889EC600E7F3DE /* LocalNotifyFunc.m */,
+				80D5600420889E1800E7F3DE /* PacketCommand.h */,
+				80D5600520889E1800E7F3DE /* PacketCommand.m */,
+				80D5601120889EC600E7F3DE /* RSAObject.h */,
+				80D5600D20889EC500E7F3DE /* RSAObject.m */,
+				80D5600A20889EC500E7F3DE /* UUID.h */,
+				80D5601220889EC600E7F3DE /* WifiInforObject.h */,
+				80D5600C20889EC500E7F3DE /* WifiInforObject.m */,
+			);
+			path = blufi;
+			sourceTree = "<group>";
+		};
+		80DDBC6720871D4D001D10D3 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				80DDBC6820871D4D001D10D3 /* UIView+Toast.h */,
+				80DDBC6920871D4D001D10D3 /* UIView+Toast.m */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		80DDBC6B208735CA001D10D3 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				80FE8546208ED4F700BC10F4 /* EspRomQueryResult.h */,
+				80FE8547208ED4F700BC10F4 /* EspRomQueryResult.m */,
+				80FE8549208ED94C00BC10F4 /* EspDownloadResult.h */,
+				80FE854A208ED94C00BC10F4 /* EspDownloadResult.m */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		80FE854F2090264700BC10F4 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				80FE85502090264700BC10F4 /* Documentation.html */,
+				80FE85542090264700BC10F4 /* GCDAsyncSocket.h */,
+				80FE85522090264700BC10F4 /* GCDAsyncSocket.m */,
+				80FE85512090264700BC10F4 /* GCDAsyncUdpSocket.m */,
+				80FE85532090264700BC10F4 /* GCDAsyncUdpSocket.h */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+		80FE85592092D31800BC10F4 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				80FE8558209029D000BC10F4 /* CocoaAsyncSocket.h */,
+				80FE854F2090264700BC10F4 /* GCD */,
+				80FE855A2092D34600BC10F4 /* Vendor */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		80FE855A2092D34600BC10F4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				80FE855B2092D34600BC10F4 /* CocoaLumberjack */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		80FE855B2092D34600BC10F4 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				80FE855C2092D34600BC10F4 /* DDTTYLogger.m */,
+				80FE855D2092D34600BC10F4 /* DDLog.h */,
+				80FE855E2092D34600BC10F4 /* DDAbstractDatabaseLogger.h */,
+				80FE855F2092D34600BC10F4 /* DDASLLogger.m */,
+				80FE85602092D34600BC10F4 /* DDFileLogger.h */,
+				80FE85612092D34600BC10F4 /* Extensions */,
+				80FE85692092D34600BC10F4 /* DDLog.m */,
+				80FE856A2092D34600BC10F4 /* DDTTYLogger.h */,
+				80FE856B2092D34600BC10F4 /* DDLog+LOGV.h */,
+				80FE856C2092D34600BC10F4 /* DDAbstractDatabaseLogger.m */,
+				80FE856D2092D34600BC10F4 /* DDFileLogger.m */,
+				80FE856E2092D34600BC10F4 /* DDASLLogger.h */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		80FE85612092D34600BC10F4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80FE85622092D34600BC10F4 /* DDContextFilterLogFormatter.m */,
+				80FE85632092D34600BC10F4 /* DDDispatchQueueLogFormatter.m */,
+				80FE85642092D34600BC10F4 /* DDMultiFormatter.h */,
+				80FE85652092D34600BC10F4 /* DDContextFilterLogFormatter.h */,
+				80FE85662092D34600BC10F4 /* DDMultiFormatter.m */,
+				80FE85672092D34600BC10F4 /* DDDispatchQueueLogFormatter.h */,
+				80FE85682092D34600BC10F4 /* README.txt */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80D2F0B51FFC80A600943675 /* Esp32Mesh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D2F0E21FFC80A700943675 /* Build configuration list for PBXNativeTarget "Esp32Mesh" */;
+			buildPhases = (
+				80D2F0B21FFC80A600943675 /* Sources */,
+				80D2F0B31FFC80A600943675 /* Frameworks */,
+				80D2F0B41FFC80A600943675 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Esp32Mesh;
+			productName = Esp32Mesh;
+			productReference = 80D2F0B61FFC80A600943675 /* Esp32Mesh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80D2F0CD1FFC80A700943675 /* Esp32MeshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D2F0E51FFC80A700943675 /* Build configuration list for PBXNativeTarget "Esp32MeshTests" */;
+			buildPhases = (
+				80D2F0CA1FFC80A700943675 /* Sources */,
+				80D2F0CB1FFC80A700943675 /* Frameworks */,
+				80D2F0CC1FFC80A700943675 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80D2F0D01FFC80A700943675 /* PBXTargetDependency */,
+			);
+			name = Esp32MeshTests;
+			productName = Esp32MeshTests;
+			productReference = 80D2F0CE1FFC80A700943675 /* Esp32MeshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80D2F0D81FFC80A700943675 /* Esp32MeshUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80D2F0E81FFC80A700943675 /* Build configuration list for PBXNativeTarget "Esp32MeshUITests" */;
+			buildPhases = (
+				80D2F0D51FFC80A700943675 /* Sources */,
+				80D2F0D61FFC80A700943675 /* Frameworks */,
+				80D2F0D71FFC80A700943675 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80D2F0DB1FFC80A700943675 /* PBXTargetDependency */,
+			);
+			name = Esp32MeshUITests;
+			productName = Esp32MeshUITests;
+			productReference = 80D2F0D91FFC80A700943675 /* Esp32MeshUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80D2F0AE1FFC80A600943675 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = AE;
+				TargetAttributes = {
+					80D2F0B51FFC80A600943675 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					80D2F0CD1FFC80A700943675 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 80D2F0B51FFC80A600943675;
+					};
+					80D2F0D81FFC80A700943675 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 80D2F0B51FFC80A600943675;
+					};
+				};
+			};
+			buildConfigurationList = 80D2F0B11FFC80A600943675 /* Build configuration list for PBXProject "Esp32Mesh" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80D2F0AD1FFC80A600943675;
+			productRefGroup = 80D2F0B71FFC80A600943675 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80D2F0B51FFC80A600943675 /* Esp32Mesh */,
+				80D2F0CD1FFC80A700943675 /* Esp32MeshTests */,
+				80D2F0D81FFC80A700943675 /* Esp32MeshUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80D2F0B41FFC80A600943675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D2F0C61FFC80A700943675 /* LaunchScreen.storyboard in Resources */,
+				80D2F0C31FFC80A700943675 /* Assets.xcassets in Resources */,
+				80D560012088989400E7F3DE /* LICENSE in Resources */,
+				8075994A20A06089001E2928 /* web in Resources */,
+				80FE85552090264700BC10F4 /* Documentation.html in Resources */,
+				80FE85742092D34600BC10F4 /* README.txt in Resources */,
+				80D2F0C11FFC80A700943675 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D2F0CC1FFC80A700943675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D2F0D71FFC80A700943675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80D2F0B21FFC80A600943675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DDBC6A20871D4D001D10D3 /* UIView+Toast.m in Sources */,
+				80FE85772092D34600BC10F4 /* DDFileLogger.m in Sources */,
+				807599DD20AADEFC001E2928 /* UserDB+CoreDataProperties.m in Sources */,
+				807599E120AADEFC001E2928 /* DeviceDB+CoreDataClass.m in Sources */,
+				807599DC20AADEFC001E2928 /* ApDB+CoreDataProperties.m in Sources */,
+				807599AB20AAD5EF001E2928 /* EspUserDBManager.m in Sources */,
+				806C0D9C2058C2F2002D7D04 /* EspJsonUtils.m in Sources */,
+				806C0D962047F378002D7D04 /* EspActionDeviceInfo.m in Sources */,
+				80D2F0BE1FFC80A700943675 /* MainViewController.m in Sources */,
+				80759923209C42D0001E2928 /* EspWebViewController.m in Sources */,
+				8013F8CA2064D2C900813CD5 /* EspCharacteristicViewHolder.m in Sources */,
+				807599E020AADEFC001E2928 /* ApDB+CoreDataClass.m in Sources */,
+				80D55FAD2088479700E7F3DE /* EspBlufiConfigureViewController.m in Sources */,
+				80FE85702092D34600BC10F4 /* DDASLLogger.m in Sources */,
+				806C0D99204F8C92002D7D04 /* EspRandomUtils.m in Sources */,
+				806C0E7920635A2D002D7D04 /* EspActionUserRegister.m in Sources */,
+				80D55FAA208831E800E7F3DE /* EspNetUtils.m in Sources */,
+				80FE85752092D34600BC10F4 /* DDLog.m in Sources */,
+				80D2F0F71FFC83EB00943675 /* EspDevice.m in Sources */,
+				807599DF20AADEFC001E2928 /* UserDB+CoreDataClass.m in Sources */,
+				80FE85722092D34600BC10F4 /* DDDispatchQueueLogFormatter.m in Sources */,
+				80FE854E208F211C00BC10F4 /* EspOTAViewController.m in Sources */,
+				80DDBC7420874EEB001D10D3 /* EspBlufiSettingsViewController.m in Sources */,
+				80D5601620889EC700E7F3DE /* RSAObject.m in Sources */,
+				8075994E20A14E4D001E2928 /* EspApiForJS.m in Sources */,
+				806C0D8F2046A2A4002D7D04 /* EspHttpUtils.m in Sources */,
+				80D2F0C91FFC80A700943675 /* main.m in Sources */,
+				80FE85732092D34600BC10F4 /* DDMultiFormatter.m in Sources */,
+				806C0D932046AB2A002D7D04 /* EspCommonUtils.m in Sources */,
+				807599E920AAE253001E2928 /* LastLoginUserDB+CoreDataProperties.m in Sources */,
+				8075999F20AA885C001E2928 /* EspApDBManager.m in Sources */,
+				806C0D8120450C51002D7D04 /* EspHttpResponse.m in Sources */,
+				806C0D8A204696A7002D7D04 /* EspActionDeviceTopology.m in Sources */,
+				806C0D8720464772002D7D04 /* EspActionDevice.m in Sources */,
+				807F59722085EED000BB9A51 /* EspBleListViewController.m in Sources */,
+				80FE85712092D34600BC10F4 /* DDContextFilterLogFormatter.m in Sources */,
+				80FE85572090264700BC10F4 /* GCDAsyncSocket.m in Sources */,
+				80FE856F2092D34600BC10F4 /* DDTTYLogger.m in Sources */,
+				80D5601820889EC700E7F3DE /* BLEDevice.m in Sources */,
+				806C0D7720400360002D7D04 /* EspDeviceUtil.m in Sources */,
+				80D5601720889EC700E7F3DE /* LocalNotifyFunc.m in Sources */,
+				80FE85562090264700BC10F4 /* GCDAsyncUdpSocket.m in Sources */,
+				80D2F0BB1FFC80A600943675 /* AppDelegate.m in Sources */,
+				80FE85762092D34600BC10F4 /* DDAbstractDatabaseLogger.m in Sources */,
+				80D2F0F31FFC83C900943675 /* EspUser.m in Sources */,
+				80D5601520889EC700E7F3DE /* WifiInforObject.m in Sources */,
+				80FE8548208ED4F700BC10F4 /* EspRomQueryResult.m in Sources */,
+				806C0E7B20635A2D002D7D04 /* EspActionUser.m in Sources */,
+				806C0D7A2041671C002D7D04 /* EspTextUtil.m in Sources */,
+				80D5600820889E1900E7F3DE /* PacketCommand.m in Sources */,
+				8075995A20A976BE001E2928 /* Model.xcdatamodeld in Sources */,
+				80D55FA620876CB400E7F3DE /* EspBlockingQueue.m in Sources */,
+				807599A220AA8871001E2928 /* EspDeviceDBManager.m in Sources */,
+				806C0D842046472D002D7D04 /* EspAction.m in Sources */,
+				807599E320AADEFC001E2928 /* DeviceDB+CoreDataProperties.m in Sources */,
+				806C0D74203EC2FB002D7D04 /* EspDeviceCharacteristic.m in Sources */,
+				80D5600920889E1900E7F3DE /* DH_AES.m in Sources */,
+				80FE8545208ECFCB00BC10F4 /* EspActionDeviceOTA.m in Sources */,
+				806C0E7A20635A2D002D7D04 /* EspActionUserLogin.m in Sources */,
+				80FE854B208ED94C00BC10F4 /* EspDownloadResult.m in Sources */,
+				80D5601920889EC700E7F3DE /* BLEdataFunc.m in Sources */,
+				807599E820AAE253001E2928 /* LastLoginUserDB+CoreDataClass.m in Sources */,
+				806C0DA2205A6E3C002D7D04 /* EspDeviceCommonViewController.m in Sources */,
+				80D2F0FB1FFE073C00943675 /* EspConstants.m in Sources */,
+				806C0D7E20450111002D7D04 /* EspHttpParams.m in Sources */,
+				8075999C20AA8107001E2928 /* EspDBManager.m in Sources */,
+				80D2F1041FFE191E00943675 /* EspActionDeviceStation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D2F0CA1FFC80A700943675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D2F0D31FFC80A700943675 /* Esp32MeshTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80D2F0D51FFC80A700943675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D2F0DE1FFC80A700943675 /* Esp32MeshUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80D2F0D01FFC80A700943675 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80D2F0B51FFC80A600943675 /* Esp32Mesh */;
+			targetProxy = 80D2F0CF1FFC80A700943675 /* PBXContainerItemProxy */;
+		};
+		80D2F0DB1FFC80A700943675 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80D2F0B51FFC80A600943675 /* Esp32Mesh */;
+			targetProxy = 80D2F0DA1FFC80A700943675 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80D2F0BF1FFC80A700943675 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D2F0C01FFC80A700943675 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80D2F0C41FFC80A700943675 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D2F0C51FFC80A700943675 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80D2F0E01FFC80A700943675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/Esp32Mesh/blufi/openssl/include/";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Esp32Mesh/blufi/openssl",
+					"$(PROJECT_DIR)/Esp32Mesh/blufi/openssl/openssl",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		80D2F0E11FFC80A700943675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Esp32Mesh/blufi/openssl/include/";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Esp32Mesh/blufi/openssl",
+					"$(PROJECT_DIR)/Esp32Mesh/blufi/openssl/openssl",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80D2F0E31FFC80A700943675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R77Y7S25Y8;
+				INFOPLIST_FILE = Esp32Mesh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Esp32Mesh/libs/security/openssl",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = espressif.Esp32Mesh1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		80D2F0E41FFC80A700943675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R77Y7S25Y8;
+				INFOPLIST_FILE = Esp32Mesh/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Esp32Mesh/libs/security/openssl",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = espressif.Esp32Mesh1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		80D2F0E61FFC80A700943675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esp32MeshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = espressif.Esp32MeshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esp32Mesh.app/Esp32Mesh";
+			};
+			name = Debug;
+		};
+		80D2F0E71FFC80A700943675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esp32MeshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = espressif.Esp32MeshTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Esp32Mesh.app/Esp32Mesh";
+			};
+			name = Release;
+		};
+		80D2F0E91FFC80A700943675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esp32MeshUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = espressif.Esp32MeshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Esp32Mesh;
+			};
+			name = Debug;
+		};
+		80D2F0EA1FFC80A700943675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Esp32MeshUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = espressif.Esp32MeshUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Esp32Mesh;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80D2F0B11FFC80A600943675 /* Build configuration list for PBXProject "Esp32Mesh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D2F0E01FFC80A700943675 /* Debug */,
+				80D2F0E11FFC80A700943675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80D2F0E21FFC80A700943675 /* Build configuration list for PBXNativeTarget "Esp32Mesh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D2F0E31FFC80A700943675 /* Debug */,
+				80D2F0E41FFC80A700943675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80D2F0E51FFC80A700943675 /* Build configuration list for PBXNativeTarget "Esp32MeshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D2F0E61FFC80A700943675 /* Debug */,
+				80D2F0E71FFC80A700943675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80D2F0E81FFC80A700943675 /* Build configuration list for PBXNativeTarget "Esp32MeshUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80D2F0E91FFC80A700943675 /* Debug */,
+				80D2F0EA1FFC80A700943675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8075995820A976BE001E2928 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8075995920A976BE001E2928 /* Model.xcdatamodel */,
+			);
+			currentVersion = 8075995920A976BE001E2928 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 80D2F0AE1FFC80A600943675 /* Project object */;
+}

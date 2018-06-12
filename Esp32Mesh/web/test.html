@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>MESH</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="keywords" content="">
+    <meta http-equiv="description" content="">
+    <style>
+        input {
+            border: 1px solid #9d9d9d;
+            height: 30px;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input:focus {
+            border: 1px solid #00c0ef;
+        }
+        button {
+            border: 1px solid #9d9d9d;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .wrapper {
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <input id="test" value="">
+        <button onclick="log()">提交</button>
+    </div>
+
+<script>
+    function log() {
+        window.webkit.messageHandlers.log.postMessage("abc");
+    }
+    function save1(name) {
+        document.getElementById("test").value = name;
+    }
+    function save2() {
+        document.getElementById("test").value = "aaaa";
+    }
+</script>
+</body>
+</html>
