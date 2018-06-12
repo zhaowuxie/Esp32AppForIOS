@@ -13,4 +13,6 @@
 + (nullable NSString *)getCurrentWiFiSsid;
 
 + (NSString *)getIPAddress:(BOOL)preferIPv4;
+
++ (NSDictionary *)getIPAddresses;
 @end

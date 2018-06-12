@@ -85,6 +85,7 @@
 		80FE85752092D34600BC10F4 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE85692092D34600BC10F4 /* DDLog.m */; };
 		80FE85762092D34600BC10F4 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE856C2092D34600BC10F4 /* DDAbstractDatabaseLogger.m */; };
 		80FE85772092D34600BC10F4 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 80FE856D2092D34600BC10F4 /* DDFileLogger.m */; };
+		8D5F42A720CFF90B004E2226 /* ESPUDPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5F42A620CFF90B004E2226 /* ESPUDPUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -332,6 +333,8 @@
 		80FE856C2092D34600BC10F4 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
 		80FE856D2092D34600BC10F4 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
 		80FE856E2092D34600BC10F4 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		8D5F42A520CFF90B004E2226 /* ESPUDPUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ESPUDPUtils.h; sourceTree = "<group>"; };
+		8D5F42A620CFF90B004E2226 /* ESPUDPUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESPUDPUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +395,8 @@
 				806C0D8E2046A2A4002D7D04 /* EspHttpUtils.m */,
 				80D55FA8208831E800E7F3DE /* EspNetUtils.h */,
 				80D55FA9208831E800E7F3DE /* EspNetUtils.m */,
+				8D5F42A520CFF90B004E2226 /* ESPUDPUtils.h */,
+				8D5F42A620CFF90B004E2226 /* ESPUDPUtils.m */,
 			);
 			path = net;
 			sourceTree = "<group>";
@@ -1073,6 +1078,7 @@
 				80D55FA620876CB400E7F3DE /* EspBlockingQueue.m in Sources */,
 				807599A220AA8871001E2928 /* EspDeviceDBManager.m in Sources */,
 				806C0D842046472D002D7D04 /* EspAction.m in Sources */,
+				8D5F42A720CFF90B004E2226 /* ESPUDPUtils.m in Sources */,
 				807599E320AADEFC001E2928 /* DeviceDB+CoreDataProperties.m in Sources */,
 				806C0D74203EC2FB002D7D04 /* EspDeviceCharacteristic.m in Sources */,
 				80D5600920889E1900E7F3DE /* DH_AES.m in Sources */,
