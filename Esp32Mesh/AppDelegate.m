@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ESPUDPUtils.h"
+
 @interface AppDelegate ()
 
 @end
@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     //NSDictionary* dic = EspNetUtils.getIPAddresses;
-    [[ESPUDPUtils alloc] init];
+    
     return YES;
 }
 

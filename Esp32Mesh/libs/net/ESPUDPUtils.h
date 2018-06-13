@@ -9,9 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "GCDAsyncUdpSocket.h"
 
-@interface ESPUDPUtils : NSObject<GCDAsyncUdpSocketDelegate>{
-    //udp对象
-    GCDAsyncUdpSocket *udpCLientSoket;
+@interface ESPUDPUtils : NSObject{
+    NSTimer* timer;
 }
-
+- (void) sendMsg;
 @end

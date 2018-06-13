@@ -9,7 +9,9 @@
 #import "ESPUDPUtils.h"
 #import "EspNetUtils.h"
 
-
+@interface ESPUDPUtils()<GCDAsyncUdpSocketDelegate>
+@property (strong, nonatomic)GCDAsyncUdpSocket * udpCLientSoket;
+@end
 #define udpPort 1025
 #define udpHost @"255.255.255.255"
 
@@ -24,24 +26,33 @@
     return self;
 }
 -(void) createUdpSocket{
-    udpCLientSoket = [[GCDAsyncUdpSocket alloc]initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    _udpCLientSoket = [[GCDAsyncUdpSocket alloc]initWithDelegate:self delegateQueue:queue];
     NSError * error = nil;
-    [udpCLientSoket bindToPort:udpPort error:&error];
-    [udpCLientSoket enableBroadcast:true error:nil];
+    [_udpCLientSoket bindToPort:udpPort error:&error];
+    [_udpCLientSoket enableBroadcast:true error:nil];
     if (error) {
         NSLog(@"error:%@",error);
     }else {
-        [udpCLientSoket beginReceiving:&error];
+        [_udpCLientSoket beginReceiving:&error];
     }
+  
+    
+    //开启定时发送请求设备信息
+    timer =  [NSTimer scheduledTimerWithTimeInterval:10.0 target:self selector:@selector(sendMsg) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
 }
+
 - (void) sendMsg {
+
     NSString *s = @"Are You Espressif IOT Smart Device?";
     NSData *data = [s dataUsingEncoding:NSUTF8StringEncoding];
-    
-    //开始发送
-    //改函数只是启动一次发送 它本身不进行数据的发送, 而是让后台的线程慢慢的发送 也就是说这个函数调用完成后,数据并没有立刻发送,异步发送
-    [udpCLientSoket sendData:data toHost:udpHost port:udpPort withTimeout:-1 tag:100];
+    [_udpCLientSoket sendData:data toHost:udpHost port:udpPort withTimeout:-1 tag:0];
 }
+-(void)udpSocket:(GCDAsyncUdpSocket *)sock didSendDataWithTag:(long)tag{
+    
+}
+
 -(void)udpSocket:(GCDAsyncUdpSocket *)sock didReceiveData:(NSData *)data fromAddress:(NSData *)address withFilterContext:(id)filterContex
 {
     //取得发送发的ip和端口
@@ -54,7 +65,8 @@
     if ([deviceAddress isEqualToString:curDevice]==false) {//不是当前设备发的消息
         NSString *s = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         if ([s containsString:@"ESP32 Mesh"]) {
-            NSLog(@"[%@:%u]%@",deviceAddress, port,s);
+            NSLog(@"[%@:%u]",deviceAddress, port);
+            NSLog(@"%@",s);
             //回掉或者获取根节点下的其它所有设备信息http
             
         }
@@ -66,7 +78,11 @@
 
 -(void)dealloc{
     NSLog(@"%s",__func__ );
-    [udpCLientSoket close];
-    udpCLientSoket = nil;
+    [_udpCLientSoket close];
+    _udpCLientSoket = nil;
+    
+    //取消定时器
+    [timer invalidate];
+    timer = nil;
 }
 @end
